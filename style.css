@@ -3,9 +3,8 @@
     --clr-primary-200: #989898;
     --clr-primary-900: #000000;
 
-    --ff-primary: georgia, garamond;
+    --ff-primary: garamond, georgia;
 }
-
 
 body,
 h1,
@@ -13,7 +12,66 @@ h2,
 h3,
 p {
     margin: 0;
+    color: var(--clr-primary-100);
+}
+
+body {
     font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+.hsbox {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(225, 225, 225, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.hsbox input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+
+.hsbox button img{
+    width: 25px;
+}
+
+.hsbox button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.s1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.header {
+    display: flex;
+    align-items: inline;
+}
+
+.footer {
+    background-color: var(--clr-primary-900);
 }
 
 .picbox {
@@ -25,7 +83,18 @@ p {
     background-size: cover;
 }
 
-.hlogo,
-.search {
+.hlogo {
     max-width: 80px;
+}
+
+
+.s1,
+.footer {
+    padding: 3rem 0;
+    margin-inline: auto;
+    width: min(90% 70.5rem);
+}
+
+.s1 {
+    text-align: center;
 }
