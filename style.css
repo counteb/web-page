@@ -16,10 +16,13 @@ p {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: var(--ff-primary);
     font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.6;
+    height: 100vh;
 }
 
 .hsbox {
@@ -29,7 +32,8 @@ body {
     display: flex;
     align-items: center;
     border-radius: 60px;
-    padding: 10px 20px;
+    padding: 3px 7px;
+    margin-top: 7px;
 }
 
 .hsbox input {
@@ -37,7 +41,7 @@ body {
     flex: 1;
     border: 0;
     outline: none;
-    padding: 24px 20px;
+    padding: 13px 20px;
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -53,34 +57,54 @@ body {
 .hsbox button {
     border: 0;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    padding: 6px;
     opacity: 50%;
     cursor: pointer;
 }
 
 .s1 {
+    padding: 3rem 0;
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    text-align: center;
     display: flex;
+    flex: 1; 
     align-items: center;
+    justify-content: center;
+}
 
+.hlbox {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
 }
 
 .header {
     display: flex;
-    align-items: inline;
+    justify-content: space-around;
+    background-color: #0003;
+    padding-bottom: 7px;
 }
 
 .footer {
-    background-color: var(--clr-primary-900);
+    background-color: var(--clr-primary-900); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fl {
+    margin-left: 20px;
 }
 
 .picbox {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    min-height: 100vh;
-    padding: 5%;
     background-image: url(img/img.jpeg);
     background-position: center;
     background-size: cover;
+    flex: 1;
 }
 
 .hlogo {
@@ -88,13 +112,28 @@ body {
 }
 
 
-.s1,
-.footer {
-    padding: 3rem 0;
-    margin-inline: auto;
-    width: min(90% 70.5rem);
+.s1b {
+    padding: 20px;
+    margin-top: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0px;
 }
 
-.s1 {
-    text-align: center;
+.hibox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.hlink {
+    margin-right: 5px;
+}
+
+.hb1 {
+    border: 0px;
+}
+
+
+
+/* how do i put a shaded area across the header*/
